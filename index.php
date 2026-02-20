@@ -7,8 +7,8 @@ if (!isset($_SESSION['historical_data'])) {
 }
 
 // Constants
-define('MARATHON_DISTANCE', 50); // 50km
-define('DEFAULT_TARGET_TIME', 4); // 4 hours default
+define('MARATHON_DISTANCE', 50);
+define('DEFAULT_TARGET_TIME', 4);
 define('DATA_FILE', 'race_data.txt');
 
 // Function to calculate current average speed
@@ -27,7 +27,7 @@ function calculateRequiredSpeed($totalDistance, $coveredDistance, $elapsedTime, 
     $remainingTime = $targetTime - $elapsedTime;
 
     if ($remainingTime <= 0) {
-        return 0; // Target time already exceeded
+        return 0;
     }
 
     return $remainingDistance / $remainingTime; // km/h
@@ -176,7 +176,7 @@ $historicalData = loadHistoricalData();
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #fcb2fcff 0%, #00d4faff 100%);
+            background: linear-gradient(135deg, #fff5f5 0%, #ffecec 100%);
             margin: 0;
             padding: 20px;
             min-height: 100vh;
@@ -192,7 +192,7 @@ $historicalData = loadHistoricalData();
         }
 
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #e53935 0%, #c62828 100%);
             color: white;
             padding: 30px;
             text-align: center;
@@ -237,11 +237,11 @@ $historicalData = loadHistoricalData();
 
         input[type="number"]:focus {
             outline: none;
-            border-color: #667eea;
+            border-color: #e53935;
         }
 
         .btn {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #43a047 0%, #2e7d32 100%);
             color: white;
             padding: 15px 30px;
             border: none;
@@ -286,7 +286,7 @@ $historicalData = loadHistoricalData();
 
         .result-value {
             font-weight: 500;
-            color: #667eea;
+            color: #d32f2f;
         }
 
         .history-section {
@@ -309,7 +309,7 @@ $historicalData = loadHistoricalData();
         }
 
         .history-table th {
-            background: #667eea;
+            background: #e53935;
             color: white;
             font-weight: 600;
         }
@@ -319,7 +319,7 @@ $historicalData = loadHistoricalData();
         }
 
         .history-table tr:hover {
-            background: #e3f2fd;
+            background: #ffebee;
         }
 
         .speed-warning {
