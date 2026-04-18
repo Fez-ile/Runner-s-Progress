@@ -1,8 +1,5 @@
 <?php
-/**
- * Test Data Generator for Runner's Progress Tracker
- * This file demonstrates the application functionality with sample data
- */
+
 
 // Include the functions
 require_once 'functions.php';
