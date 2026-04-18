@@ -1,8 +1,4 @@
 <?php
-/**
- * Configuration file for Runner's Progress Tracker
- * Centralized settings for easy maintenance and customization
- */
 
 // Application Settings
 define('APP_NAME', "Runner's Progress Tracker");
