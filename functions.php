@@ -1,8 +1,5 @@
 <?php
-/**
- * Runner's Progress Tracker - Utility Functions
- * Additional functions for data analysis and advanced calculations
- */
+
 
 // Function to calculate pace (time per kilometer)
 function calculatePace($speed)
